@@ -1,0 +1,51 @@
+:root {
+    --bg-primary: #0a0a0a;
+    --bg-secondary: #111;
+    --bg-tertiary: #1a1a1a;
+    --bg-hover: #222;
+    --text-primary: #eee;
+    --text-secondary: #aaa;
+    --text-muted: #666;
+    --text-labels: #888;
+    --border-subtle: #222;
+    --border-default: #333;
+    --border-hover: #444;
+    --accent-display: #4fbdba;
+    --accent-controller: #fbbf24;
+    --accent-success: #22c55e;
+    --accent-orange: #f97316;
+    --accent-red: #ef4444;
+    --stripe-dark: #0a0a0a;
+    --stripe-light: #111;
+}
+
+[data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --bg-tertiary: #e9ecef;
+    --bg-hover: #dee2e6;
+    --text-primary: #212529;
+    --text-secondary: #495057;
+    --text-muted: #6c757d;
+    --text-labels: #495057;
+    --border-subtle: #dee2e6;
+    --border-default: #ced4da;
+    --border-hover: #adb5bd;
+    --accent-display: #0891b2;
+    --accent-controller: #d97706;
+    --accent-success: #16a34a;
+    --accent-orange: #ea580c;
+    --accent-red: #dc2626;
+    --stripe-dark: #f8f9fa;
+    --stripe-light: #e9ecef;
+}
+
+html,
+body,
+main,
+#root {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}

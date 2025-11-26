@@ -1,0 +1,18 @@
+{
+    "name": "turkey-escape",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "pnpm --filter @turkey-escape/server build && pnpm --filter @turkey-escape/client build",
+        "dev": "./start.sh",
+        "dev:server": "pnpm --filter @turkey-escape/server dev",
+        "dev:client": "pnpm --filter @turkey-escape/client dev",
+        "start": "pnpm --filter @turkey-escape/server start"
+    },
+    "packageManager": "pnpm@10.6.2",
+    "engines": {
+        "node": ">=22.0.0",
+        "pnpm": ">=9.0.0"
+    }
+}
