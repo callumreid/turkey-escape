@@ -2,7 +2,11 @@
 nixPkgs = ["nodejs_22", "pnpm"]
 
 [phases.install]
-cmds = ["pnpm install"]
+cmds = [
+    "pnpm config set //registry.npmjs.org/:_authToken $NPM_TOKEN",
+    "pnpm config set @volley:registry https://registry.npmjs.org/",
+    "pnpm install --no-frozen-lockfile"
+]
 
 [phases.build]
 cmds = ["pnpm build"]
