@@ -8,14 +8,14 @@ ENV NPM_TOKEN=$NPM_TOKEN
 # Create .npmrc with auth
 RUN printf '//registry.npmjs.org/:_authToken=%s\n@volley:registry=https://registry.npmjs.org/\nalways-auth=true\n' "$NPM_TOKEN" > /root/.npmrc
 
-# Copy server package files
-COPY apps/server/package.json ./
+# Copy package files
+COPY package.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy server source
-COPY apps/server/ ./
+# Copy source
+COPY . .
 
 # Build
 RUN npm run build
