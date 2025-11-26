@@ -7,7 +7,7 @@
         ".": "./src/shared/index.ts"
     },
     "scripts": {
-        "build": "pnpm typecheck && pnpm clean && tsx esbuild.config.ts",
+        "build": "npm run typecheck && npm run clean && tsx esbuild.config.ts",
         "clean": "rm -rf dist",
         "dev": "tsx esbuild.config.ts --watch",
         "start": "node dist/index.js",
@@ -30,7 +30,6 @@
         "typescript": "^5.8.2"
     },
     "engines": {
-        "node": ">=22.0.0",
-        "pnpm": ">=9.0.0"
+        "node": ">=22.0.0"
     }
 }
