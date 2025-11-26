@@ -3,11 +3,7 @@ nixPkgs = ["nodejs_22"]
 
 [phases.install]
 cmds = [
-    "echo '//registry.npmjs.org/:_authToken='$NPM_TOKEN > ~/.npmrc",
-    "echo '@volley:registry=https://registry.npmjs.org/' >> ~/.npmrc",
-    "echo 'always-auth=true' >> ~/.npmrc",
-    "cat ~/.npmrc",
-    "npm install"
+    "echo -e '//registry.npmjs.org/:_authToken='$NPM_TOKEN'\n@volley:registry=https://registry.npmjs.org/\nalways-auth=true' > ~/.npmrc && cat ~/.npmrc && npm install"
 ]
 
 [phases.build]
