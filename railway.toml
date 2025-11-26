@@ -1,7 +1,0 @@
-[build]
-builder = "DOCKERFILE"
-dockerfilePath = "apps/server/Dockerfile"
-
-[deploy]
-healthcheckPath = "/"
-healthcheckTimeout = 30
